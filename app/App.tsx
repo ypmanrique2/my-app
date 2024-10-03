@@ -3,6 +3,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import WelcomeScreen from '../app/screens/WelcomeScreen';
 import LoginScreen from '../app/screens/LoginScreen';
+/* import { useStore } from 'zustand';
+import { useStore } from './state/store'; */
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,5 +19,19 @@ const App: React.FC = () => {
         </NavigationContainer>
     );
 };
+
+/* const MyComponent = () => {
+    const count = useStore((state) => state.count);
+    const increment = useStore((state) => state.increment);
+
+    return (
+    <View>
+    <Text>Count: {count}</Text>
+    <Button title="Increment" onPress={increment} />
+    </View>
+    );
+};
+
+export default MyComponent; */
 
 export default App;
