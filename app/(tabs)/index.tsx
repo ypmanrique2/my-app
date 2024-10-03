@@ -3,6 +3,8 @@ import { View, StyleSheet } from 'react-native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RouteProp } from '@react-navigation/native';
 import WelcomeScreen from '../screens/WelcomeScreen';
+import { AppRegistry } from 'react-native';
+import App from '../../app/App';
 
 type IndexScreenProps = {
   navigation: NativeStackNavigationProp<any>;
